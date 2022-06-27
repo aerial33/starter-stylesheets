@@ -53,4 +53,26 @@ Alternative/Fancier way of doing this
 }
 ```
 
+#### Select Primary
+
+Manual Approach
+
+- [coolors](https://coolors.co/)
+- [happyhues](https://www.happyhues.co/)
+- select your own color
+- get shades [shadowlord](https://noeldelgado.github.io/shadowlord/#73fdad)
+
+Library/Faster Approach
+
+- [bootstrap](https://getbootstrap.com/docs/5.0/customize/color/#color-sass-maps)
+- [tailwind](https://tailwindcss.com/docs/customizing-colors#color-palette-reference)
+
+#### Select Grey
+
+- [tailwind](https://tailwindcss.com/docs/customizing-colors#color-palette-reference)
+
+#### Box Shadow
+
+- [tailwind](https://tailwindcss.com/docs/box-shadow)
+
 resource: [John Smilga/ default-starter](https://github.com/john-smilga/default-starter)
