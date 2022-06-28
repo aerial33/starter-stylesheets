@@ -31,6 +31,7 @@ Alternative/Fancier way of doing this
 #### Select Fonts
 
 - [Google Fonts](https://fonts.google.com/)
+- [TypeWolf](https://www.typewolf.com/)
 - [fontpair](https://www.fontpair.co/)
 - [pagecloud](https://www.pagecloud.com/blog/best-google-fonts-pairings)
 

@@ -9,31 +9,68 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1>hello world</h1>
-		<p>
-			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque cumque
-			voluptatibus adipisci sit officia doloribus nemo optio et veritatis
-			assumenda?
-		</p>
-		<h2>hello world</h2>
-		<p>
-			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque cumque
-			voluptatibus adipisci sit officia doloribus nemo optio et veritatis
-			assumenda?
-		</p>
+		<section>
+			<div class="container">
+				<h1>hello world</h1>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque cumque
+					voluptatibus adipisci sit officia doloribus nemo optio et veritatis
+					assumenda?
+				</p>
+				<h2>hello world</h2>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque cumque
+					voluptatibus adipisci sit officia doloribus nemo optio et veritatis
+					assumenda?
+				</p>
+			</div>
+		</section>
 
-		<h1>hello world</h1>
-		<h2>hello world</h2>
-		<h3>hello world</h3>
-		<h4>hello world</h4>
-		<h5>hello world</h5>
+		<section class="container">
+			<h1>hello world</h1>
+			<h2>hello world</h2>
+			<h3>hello world</h3>
+			<h4>hello world</h4>
+			<h5>hello world</h5>
+		</section>
 
-		<a href="#">I'm link</a>
-
-		<ul>
-			<li>First item</li>
-			<li>Second items</li>
-			<li>Third items</li>
-		</ul>
+		<section class="container flex">
+			<a href="#">I'm link</a>
+			<ul class="flex">
+				<li>First item |</li>
+				<li>Second items |</li>
+				<li>Third items</li>
+			</ul>
+		</section>
+		<section class="container">
+			<figure>
+				<img
+					src="https://source.unsplash.com/random/780x400"
+					alt="unsplash"
+					class="img"
+				/>
+			</figure>
+		</section>
+		<section>
+			<div class="container">
+				<button class="btn" type="button">default primary</button>
+				<button class="btn btn-secondary" type="button">
+					default secondary
+				</button>
+				<button class="btn btn-danger" type="button">default danger</button>
+			</div>
+		</section>
+		<section class="container">
+			<div class="alert alert-success">
+				<strong>Yay!</strong> 🎉 you successfully signed in to our service.
+			</div>
+			<div class="alert alert-info">
+				ℹ️<strong> Please do not share details about this information</strong>.
+			</div>
+			<div class="alert alert-danger">
+				<strong>Oops!</strong> 😱 a problem has occurred while processing your
+				booking.
+			</div>
+		</section>
 	</body>
 </html>
