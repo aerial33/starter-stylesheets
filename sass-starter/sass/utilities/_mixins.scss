@@ -36,6 +36,7 @@
 }
 
 // responsive media screen
+//todo make media query with Kevin Powell ways
 
 @mixin media-md {
 	@media screen and (min-width: 768px) {
@@ -51,4 +52,14 @@
 	@media screen and (min-width: 1600px) {
 		@content;
 	}
+}
+
+//todo make flex and grid with @mixin
+
+@mixin flexCenter($direction: column) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	flex-direction: $direction;
 }

@@ -5,3 +5,44 @@
 	width: min(100% - 2rem, $max-width);
 	margin-inline: auto;
 }
+
+//todo section class
+section {
+	padding: 2rem 0;
+}
+
+/* section title */
+.section-title {
+	text-align: center;
+	margin-bottom: 2rem;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -0.5rem;
+		left: 0;
+		right: 0;
+		background: var(--secondary);
+		width: 7em;
+		height: 0.25rem;
+		margin: 0 auto;
+	}
+}
+
+// flex center
+.flex-row {
+	@include flexCenter(row);
+}
+.flex-column {
+	@include flexCenter();
+}
+// grid center
+.center {
+	display: grid;
+	place-content: center;
+	height: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
