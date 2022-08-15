@@ -1,0 +1,11 @@
+@use './colors' as c;
+@use '../base/fonts' as *;
+
+// function map for colors
+@function color($color-name) {
+	@return map-get($map: c.$colors, $key: $color-name);
+}
+
+@function weight($weight-name) {
+	@return map-get($font-weigths, $weight-name);
+}

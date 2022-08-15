@@ -1,0 +1,11 @@
+@use '../utilities/' as u;
+@use './fonts' as f;
+
+:root {
+	@each $name, $value in u.$colors {
+		--#{$name}: #{$value};
+	}
+	@each $name, $value in f.$font-weigths {
+		--#{$name}: #{$value};
+	}
+}
