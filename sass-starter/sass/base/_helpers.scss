@@ -1,0 +1,7 @@
+@use '../utilities/' as *;
+
+// container
+.container {
+	width: min(100% - 2rem, $max-width);
+	margin-inline: auto;
+}
