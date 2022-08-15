@@ -3,7 +3,7 @@
 // ---
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-/* FONT FAMILY */
+// FONT FAMILY
 
 // Regular font family
 $text-font-stack: 'Poppins', 'Open Sans', sans-serif !default;
@@ -12,11 +12,11 @@ $text-font-stack: 'Poppins', 'Open Sans', sans-serif !default;
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 	'Monaco', monospace !default;
 
-/* FONT WEIGHT */
+//  FONT WEIGHT
 $font-weigths: (
 	'regular': 400,
 	'medium': 500,
 	'bold': 700,
 );
 
-/* FONT SIZE */
+// FONT SIZE

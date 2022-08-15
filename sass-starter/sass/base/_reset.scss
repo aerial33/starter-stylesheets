@@ -1,4 +1,4 @@
-@use '../utilities/' as c;
+@use '../utilities/' as u;
 
 // https://piccalil.li/blog/a-modern-css-reset
 
@@ -17,6 +17,7 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
 ul[role='list'],
 ol[role='list'] {
 	list-style: none;
@@ -44,12 +45,13 @@ body {
 a,
 a:visited,
 a:active {
-	color: c.$brand-color;
+	color: u.$brand-color;
 	// @include c.var(color, 'tertiary', c.$colors);
 	text-decoration: none;
 
-	@include c.on-event {
-		@include c.var(color, 'red-dark', c.$colors);
+	@include u.on-event {
+		// @include c.var(color, 'tertiary', c.$colors);
+		color: u.$highlight;
 	}
 }
 

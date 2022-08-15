@@ -1,8 +1,8 @@
-@use '../utilities/' as u;
+@use '../utilities/colors' as c;
 @use './fonts' as f;
 
 :root {
-	@each $name, $value in u.$colors {
+	@each $name, $value in c.$colors {
 		--#{$name}: #{$value};
 	}
 	@each $name, $value in f.$font-weigths {

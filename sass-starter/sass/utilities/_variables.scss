@@ -8,7 +8,11 @@ $headline-color: f.color('dark') !default;
 $text-color: f.color('gray') !default;
 
 /// Main brand color
-$brand-color: f.color(brand-color) !default;
+$brand-color: f.color(primary) !default;
+$secondary: f.color(secondary) !default;
+$highlight: f.color(tertiary) !default;
+$success: f.color('green') !default;
+$danger: f.color('red') !default;
 
 /// Container's maximum width
 $max-width: 70rem !default;
