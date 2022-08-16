@@ -20,3 +20,16 @@ $font-weigths: (
 );
 
 // FONT SIZE
+$type-scale: (
+	50: 0.875rem,
+	100: 1rem,
+	200: 1.25rem,
+	300: 1.953rem,
+	400: 1.563rem,
+	500: 2.441rem,
+	600: 3.052rem,
+);
+
+// Line height
+$lineheight-body: 1.75;
+$lineheight-head: 1.3;

@@ -6,6 +6,11 @@
 	@return map-get($map: c.$colors, $key: $color-name);
 }
 
+// function map for font-weigth
 @function weight($weight-name) {
 	@return map-get($font-weigths, $weight-name);
+}
+// function map for font-size
+@function size($size-name) {
+	@return map-get($type-scale, $size-name);
 }

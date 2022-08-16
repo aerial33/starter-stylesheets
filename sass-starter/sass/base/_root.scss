@@ -5,7 +5,10 @@
 	@each $name, $value in c.$colors {
 		--#{$name}: #{$value};
 	}
+	@each $size, $value in f.$type-scale {
+		--fs-#{$size}: #{$value};
+	}
 	@each $name, $value in f.$font-weigths {
-		--#{$name}: #{$value};
+		--fw-#{$name}: #{$value};
 	}
 }

@@ -59,8 +59,9 @@ a:active {
 img,
 picture,
 svg {
-	max-width: 100%;
+	width: 100%;
 	display: block;
+	object-fit: cover;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

@@ -15,6 +15,9 @@ $highlight: f.color(tertiary) !default;
 $success: f.color('green') !default;
 $red-flag: f.color('red') !default;
 
+/// Container's maximum width
+$max-width: 70rem !default;
+
 /// Box Shadow
 $clr-shadow: hsla(0, 0%, 0%, 0.1);
 $shadow: 0 1px 3px 0 $clr-shadow, 0 1px 2px -1px $clr-shadow;
@@ -27,8 +30,8 @@ $bd-radius: 0.25rem;
 $bd-raduis-md: 0.375rem;
 $bd-raduis-lg: 0.5rem;
 
-/// Container's maximum width
-$max-width: 70rem !default;
+/// transition
+$transition: 0.3s ease-in-out all;
 
 /// Breakpoints map
 
