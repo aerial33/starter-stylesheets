@@ -3,23 +3,35 @@
 // -----------------------------------------------------------------------------
 @use './functions' as f;
 
-/// Copy text color
+/// General style colors
 $headline-color: f.color('dark') !default;
 $text-color: f.color('gray') !default;
+$body-bg: f.color('gray-50') !default;
 
-/// Main brand color
+/// Main Brand Color
 $brand-color: f.color(primary) !default;
 $secondary: f.color(secondary) !default;
 $highlight: f.color(tertiary) !default;
 $success: f.color('green') !default;
-$danger: f.color('red') !default;
+$red-flag: f.color('red') !default;
+
+/// Box Shadow
+$clr-shadow: hsla(0, 0%, 0%, 0.1);
+$shadow: 0 1px 3px 0 $clr-shadow, 0 1px 2px -1px $clr-shadow;
+$shadow-md: 0 4px 6px -1px $clr-shadow, 0 2px 4px -2px $clr-shadow;
+$shadow-lg: 0 10px 15px -3px $clr-shadow, 0 4px 6px -4px $clr-shadow;
+$shadow-xl: 0 20px 25px -5px $clr-shadow, 0 8px 10px -6px $clr-shadow;
+
+/// border radius
+$bd-radius: 0.25rem;
+$bd-raduis-md: 0.375rem;
+$bd-raduis-lg: 0.5rem;
 
 /// Container's maximum width
 $max-width: 70rem !default;
 
 /// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
 $breakpoints: (
 	'small': 20rem,
 	// 320px
