@@ -37,7 +37,7 @@ section {
 	@include flexCenter();
 }
 // grid center
-.center {
+.center-content {
 	display: grid;
 	place-content: center;
 	height: 100%;
@@ -45,4 +45,10 @@ section {
 
 .text-center {
 	text-align: center;
+}
+
+// to use with class nav
+ul li + li:before {
+	content: ' | ';
+	padding: 0 10px;
 }
