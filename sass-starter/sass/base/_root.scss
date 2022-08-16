@@ -1,12 +1,23 @@
 @use '../utilities/colors' as c;
+@use '../utilities/mixins' as *;
 @use './fonts' as f;
 
 :root {
 	@each $name, $value in c.$colors {
 		--#{$name}: #{$value};
 	}
-	@each $size, $value in f.$type-scale {
-		--fs-#{$size}: #{$value};
+	@each $screen-size, $font-size in f.$type-scale {
+		@if $screen-size == normal {
+			@each $size, $value in $font-size {
+				--fs-#{$size}: #{$value};
+			}
+		} @else {
+			@include mq('xlarge') {
+				@each $size, $value in $font-size {
+					--fs-#{$size}: #{$value};
+				}
+			}
+		}
 	}
 	@each $name, $value in f.$font-weigths {
 		--fw-#{$name}: #{$value};

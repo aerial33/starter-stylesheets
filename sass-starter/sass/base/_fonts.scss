@@ -21,13 +21,22 @@ $font-weigths: (
 
 // FONT SIZE
 $type-scale: (
-	50: 0.875rem,
-	100: 1rem,
-	200: 1.25rem,
-	300: 1.953rem,
-	400: 1.563rem,
-	500: 2.441rem,
-	600: 3.052rem,
+	normal: (
+		50: 0.875rem,
+		100: 1rem,
+		200: 1.25rem,
+		300: 1.953rem,
+		400: 1.563rem,
+		500: 2.441rem,
+		600: 3.052rem,
+	),
+	large: (
+		200: 1.425rem,
+		300: 2rem,
+		400: 2.827rem,
+		500: 4rem,
+		600: 5.653rem,
+	),
 );
 
 // Line height

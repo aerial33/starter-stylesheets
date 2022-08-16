@@ -1,6 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
+@use './variables' as v;
 
 /// Event wrapper
 /// @author Harry Roberts
@@ -35,31 +36,22 @@
 	transition: all 0.5s ease-in-out;
 }
 
-// responsive media screen
-//todo make media query with Kevin Powell ways
+/// responsive media screen
+/// @author Kevin Powell
+@mixin mq($key) {
+	$size: map-get(v.$breakpoints, $key);
 
-@mixin media-md {
-	@media screen and (min-width: 768px) {
-		@content;
-	}
-}
-@mixin media-lg {
-	@media screen and (min-width: 1024px) {
-		@content;
-	}
-}
-@mixin media-xl {
-	@media screen and (min-width: 1600px) {
+	@media screen and (min-width: $size) {
 		@content;
 	}
 }
 
 //todo make flex and grid with @mixin
 
-@mixin flexCenter($direction: column) {
+@mixin flexCenter($direction: column, $gap: 1rem) {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
+	gap: $gap;
 	flex-direction: $direction;
 }
