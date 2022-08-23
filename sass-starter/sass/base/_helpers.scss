@@ -6,6 +6,13 @@
 	margin-inline: auto;
 }
 
+figure {
+	border: 4px solid var(--secondary);
+	border-radius: $bd-radius;
+	max-width: $max-width;
+	box-shadow: $shadow-lg;
+}
+
 //todo section class
 section {
 	padding: 2rem 0;

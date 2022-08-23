@@ -7,11 +7,13 @@
 		--#{$name}: #{$value};
 	}
 	@each $screen-size, $font-size in f.$type-scale {
+		// refer to a size in $type-scale
 		@if $screen-size == normal {
 			@each $size, $value in $font-size {
 				--fs-#{$size}: #{$value};
 			}
 		} @else {
+			// indicate $breakpoint of your media-query
 			@include mq('xlarge') {
 				@each $size, $value in $font-size {
 					--fs-#{$size}: #{$value};

@@ -48,10 +48,12 @@ a:active {
 	color: u.$brand-color;
 	// @include c.var(color, 'tertiary', c.$colors);
 	text-decoration: none;
+	transition: u.$transition;
 
 	@include u.on-event {
 		// @include c.var(color, 'tertiary', c.$colors);
-		color: u.$highlight;
+		color: darken(u.$brand-color, 30%);
+		// read doc https://sass-lang.com/documentation/modules/color
 	}
 }
 
