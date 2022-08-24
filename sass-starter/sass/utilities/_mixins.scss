@@ -26,6 +26,13 @@
 	}
 }
 
+@mixin btn-hover($h-color: v.$brand-color) {
+	&:hover {
+		background-color: darken($h-color, 15%);
+		@content;
+	}
+}
+
 // Mixin var properties
 @mixin var($property, $variable, $vars) {
 	#{$property}: map-get($map: $vars, $key: $variable);

@@ -1,0 +1,36 @@
+@use '../utilities/' as *;
+
+.btn {
+	cursor: pointer;
+	background: var(--primary);
+	border: transparent;
+	border-radius: $bd-radius;
+	color: var(--white);
+	padding: 0.75rem 1rem;
+	box-shadow: $shadow;
+	transition: $transition;
+	text-transform: capitalize;
+	display: inline-block;
+	@include btn-hover {
+		box-shadow: var(--shadow-md);
+	}
+}
+
+.btn-secondary {
+	color: var(--primary);
+	background-color: var(--gray-50);
+	border: 1px solid var(--primary);
+	@include btn-hover {
+		color: var(--white);
+	}
+}
+
+.btn-danger {
+	color: var(--white);
+	background-color: var(--tertiary);
+	@include btn-hover($h-color: $highlight);
+}
+
+.btn-block {
+	width: 100%;
+}
