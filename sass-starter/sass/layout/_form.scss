@@ -1,0 +1,47 @@
+@use '../utilities/' as *;
+@use '../base/fonts' as f;
+
+/** Form */
+
+.form {
+	max-width: 40rem;
+	background: var(--white);
+	border-radius: $bd-radius;
+	box-shadow: $shadow-md;
+	padding: 2rem 2.5rem;
+	margin-inline: auto; /* must be modified if wrapped in container form */
+
+	.form-row {
+		margin-bottom: 1rem;
+	}
+
+	.form-label {
+		display: block;
+		@include var(font-size, 'fs-50', f.$type-scale);
+		margin-bottom: 0, 5rem;
+		text-transform: capitalize;
+		letter-spacing: f.$letterSpacing;
+	}
+	.form-input,
+	.form-textarea {
+		width: 100%;
+		padding: 0.5rem 0.75rem;
+		background-color: $body-bg;
+		border: 1px solid var(--gray-200);
+		border-radius: $bd-radius;
+	}
+	.input-alert {
+		border: 1px solid var(--red-dark);
+	}
+	.form-textarea {
+		height: 7rem;
+		resize: none;
+	}
+	::placeholder {
+		font-family: inherit;
+		color: var(--gray-400);
+	}
+}
+.form-alert {
+	color: var(--red-dark);
+}
