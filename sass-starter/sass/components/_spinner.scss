@@ -1,0 +1,17 @@
+/** loading */
+
+.loading {
+	width: 6rem;
+	height: 6rem;
+	border: 5px solid var(--gray-500);
+	border-radius: 50%;
+	border-top-color: var(--primary);
+	animation: spinner 0.9s linear infinite;
+	margin: 2rem auto;
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
