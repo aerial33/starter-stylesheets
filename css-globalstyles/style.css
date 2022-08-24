@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400|Poppins:500');
+
 *,
 ::after,
 ::before {
 	box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Inter:400|Poppins:500');
 
 html {
 	font-size: 100%;
