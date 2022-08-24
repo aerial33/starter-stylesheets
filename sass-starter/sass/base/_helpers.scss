@@ -22,24 +22,12 @@ section {
 .section-title {
 	text-align: center;
 	margin-bottom: 1.2em;
-	@include pseudo($loc: after, $bottom: -O.5rem) {
+	@include pseudo($loc: after, $top: null, $bottom: -0.5rem) {
 		background-color: var(--secondary);
 		width: 3em;
 		height: 0.25rem;
 		margin: 0 auto;
 	}
-	/* 	position: relative;
-	&::after {
-		content: '';
-		position: absolute;
-		bottom: -0.5rem;
-		left: 0;
-		right: 0;
-		background: var(--secondary);
-		width: 3em;
-		height: 0.25rem;
-		margin: 0 auto;
-	} */
 }
 
 // flex center
