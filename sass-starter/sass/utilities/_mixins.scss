@@ -46,7 +46,7 @@
 	}
 }
 
-//todo make flex and grid with @mixin
+/// center element with flex todo with grid
 
 @mixin flexCenter($direction: column, $gap: 1rem) {
 	display: flex;
@@ -54,4 +54,27 @@
 	align-items: center;
 	gap: $gap;
 	flex-direction: $direction;
+}
+
+/// @mixin with pseudo element =>  https://youtu.be/7ruDsUN4-iA
+@mixin pseudo(
+	$loc: before,
+	$content: '',
+	$pos: absolute,
+	$top: 0,
+	$right: 0,
+	$bottom: 0,
+	$left: 0
+) {
+	position: relative;
+
+	&::#{$loc} {
+		content: $content;
+		position: $pos;
+		top: $top;
+		bottom: $bottom;
+		left: $left;
+		right: $right;
+		@content;
+	}
 }
